@@ -1,4 +1,3 @@
-أكيد. ده README احترافي لمشروع **MR.X Sentinel**، بصياغة مناسبة لـ GitHub وتركّز على إن المشروع Defensive SOC / Blue Team.
 
 # MR.X Sentinel
 
