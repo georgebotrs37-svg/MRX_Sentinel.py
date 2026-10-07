@@ -1,0 +1,86 @@
+{
+  "source": "data\\test_logs\\sample.log",
+  "lines": 8,
+  "alerts": [
+    {
+      "severity": "HIGH",
+      "rule": "Suspicious PowerShell",
+      "line": 6,
+      "evidence": "EventID=4688 Process=powershell.exe CommandLine=powershell.exe -enc SQBFAFgA",
+      "mitre": [
+        {
+          "technique": "T1059.001",
+          "name": "PowerShell"
+        }
+      ]
+    },
+    {
+      "severity": "MEDIUM",
+      "rule": "Possible Account Creation",
+      "line": 7,
+      "evidence": "EventID=4720 AccountName=backdoor UserCreated=true",
+      "mitre": [
+        {
+          "technique": "T1136.001",
+          "name": "Create Account: Local Account"
+        }
+      ]
+    },
+    {
+      "severity": "HIGH",
+      "rule": "Possible Scheduled Task Persistence",
+      "line": 8,
+      "evidence": "EventID=4698 TaskName=WindowsUpdateUpdater ScheduledTask=true",
+      "mitre": [
+        {
+          "technique": "T1053.005",
+          "name": "Scheduled Task"
+        }
+      ]
+    },
+    {
+      "severity": "HIGH",
+      "rule": "Possible Brute Force",
+      "line": "-",
+      "evidence": "5 failed authentication events from 8.8.8.8",
+      "mitre": [
+        {
+          "technique": "T1110",
+          "name": "Brute Force"
+        }
+      ]
+    }
+  ],
+  "iocs": {
+    "ips": [
+      "8.8.8.8"
+    ],
+    "domains": [
+      "powershell.exe"
+    ],
+    "urls": [],
+    "emails": [],
+    "hashes": []
+  },
+  "mitre": [
+    {
+      "technique": "T1059.001",
+      "name": "PowerShell"
+    },
+    {
+      "technique": "T1110",
+      "name": "Brute Force"
+    },
+    {
+      "technique": "T1136.001",
+      "name": "Create Account: Local Account"
+    },
+    {
+      "technique": "T1053.005",
+      "name": "Scheduled Task"
+    }
+  ],
+  "failed_auth_sources": {
+    "8.8.8.8": 5
+  }
+}

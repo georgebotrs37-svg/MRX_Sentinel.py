@@ -1,0 +1,8 @@
+EventID=4625 AccountName=admin SourceIP=8.8.8.8 Status=Failed
+EventID=4625 AccountName=admin SourceIP=8.8.8.8 Status=Failed
+EventID=4625 AccountName=admin SourceIP=8.8.8.8 Status=Failed
+EventID=4625 AccountName=admin SourceIP=8.8.8.8 Status=Failed
+EventID=4625 AccountName=admin SourceIP=8.8.8.8 Status=Failed
+EventID=4688 Process=powershell.exe CommandLine=powershell.exe -enc SQBFAFgA
+EventID=4720 AccountName=backdoor UserCreated=true
+EventID=4698 TaskName=WindowsUpdateUpdater ScheduledTask=true
